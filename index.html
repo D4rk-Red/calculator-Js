@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="content">
+        <section class="pantalla">
+            <div id="pantalla">
+                Pantalla
+            </div>
+        </section>
+        <section class="seccion-numeros">
+            <div class="btn-num">
+                <div class="colum-num">
+                    <button class="btn-digito" onclick="obtenerValor(this)">9</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">8</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">7</button>
+                </div>
+                <div class="colum-num">
+                    <button class="btn-digito" onclick="obtenerValor(this)">6</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">5</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">4</button>
+                </div>
+                <div class="colum-num">
+                    <button class="btn-digito" onclick="obtenerValor(this)">3</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">2</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">1</button>
+                </div>
+                <div class="colum-num">
+                    <button class="btn-digito" onclick="obtenerValor(this)">0</button>
+                    <button class="btn-digito" onclick="obtenerValor(this)">.</button>
+                    <button class="btn-digito" onclick="calcular(this)">=</button>
+                </div>
+                <div class="fila-num">
+                    <button class="btn-digito" onclick="limpiarPantalla()">cc</button>
+                    <button class="btn-digito" onclick="obtenerOperador('/')">/</button>
+                    <button class="btn-digito" onclick="obtenerOperador('*')">*</button>
+                    <button class="btn-digito" onclick="obtenerOperador('-')">-</button>
+                    <button class="btn-digito" onclick="obtenerOperador('+')">+</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
